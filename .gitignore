@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+Pipfile
+__pycache__/
+csse_covid_19_data
+venv
