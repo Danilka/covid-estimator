@@ -82,7 +82,7 @@
                 Here I have only looked at mortality data and estimated how many cases of Coronavirus are actually out there.
             </p>
             <p>
-                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 24.
+                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 25.
             </p>
         </span>
     </div>
@@ -103,34 +103,34 @@
                 Indonesia
                 ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">164,245 estimated</span> vs. 514 reported cases as of Mar 23.</h4>
+            <h4><span style="background-color: #fda1b4;">108,243 estimated</span> vs. 686 reported cases as of Mar 24.</h4>
             <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Indonesia.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 14 (±6 days).</span>
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 22 (±6 days).</span>
             
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: High</span>
-        <canvas id="58_data" width="100%" height="50%"></canvas>
+        <canvas id="132_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
             Link to Share: <a href="https://coronaviruspredictor.com/Indonesia.html">https://coronaviruspredictor.com/Indonesia.html</a>
         </div>
 
         <script>
-        var ctx = document.getElementById('58_data').getContext('2d');
+        var ctx = document.getElementById('132_data').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23'],
+                labels: ['Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [1000, 1275, 1625, 2073, 2643, 3369, 4296, 5477, 6983, 8904, 11352, 14474, 18454, 23528, 29997, 38245, 48761, 62167, 79259, 101050, 128830, 164245],
+                    data: [955, 1185, 1469, 1821, 2258, 2800, 3472, 4304, 5337, 6617, 8204, 10172, 12612, 15637, 19387, 24037, 29802, 36950, 45811, 56798, 70419, 87306, 108243],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [2, 2, 2, 2, 4, 4, 6, 19, 27, 34, 34, 69, 96, 117, 134, 172, 227, 311, 369, 450, 514, 514.0],
+                    data: [2, 2, 2, 2, 4, 4, 6, 19, 27, 34, 34, 69, 96, 117, 134, 172, 227, 311, 369, 450, 514, 579, 686],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]

@@ -134,7 +134,7 @@ class CovidDataAnalyzer:
         """
         return total/(1+np.exp(-(day-maximum)/infection_speed))
 
-    def load_data(self):
+    def load_data(self, deaths_file_path, cases_file_path):
         """
         Load data from Johns Hopkins' data repo into the memory.
         :return: self
@@ -144,7 +144,7 @@ class CovidDataAnalyzer:
         self.df_cases = pd.read_csv(
             os.path.join(
                 self.base_path,
-                'csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv'
+                cases_file_path
             )
         )
 
@@ -152,7 +152,7 @@ class CovidDataAnalyzer:
         df = pd.read_csv(
             os.path.join(
                 self.base_path,
-                'csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv'
+                deaths_file_path
             )
         )
         self.df_deaths = df.fillna(0)  # Fill nan with 0
@@ -307,10 +307,13 @@ def render_pages():
     """Render all site pages."""
 
     covid_analyzer = CovidDataAnalyzer(base_path=DATA_BASE_PATH)
-    data = covid_analyzer.load_data().approximate_data(
+    data = covid_analyzer.load_data(
+        cases_file_path='csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv',
+        deaths_file_path='csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv',
+    ).approximate_data(
         include_countries=['All'],
         exclude_countries=[],
-        quality=['good', 'ok']
+        quality=['good', 'ok', ]
     )
 
     data_world = []

@@ -82,7 +82,7 @@
                 Here I have only looked at mortality data and estimated how many cases of Coronavirus are actually out there.
             </p>
             <p>
-                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 24.
+                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 25.
             </p>
         </span>
     </div>
@@ -100,37 +100,37 @@
     
         <div class="container" style="margin-top: 50px;">
             <h1>
-                California, US
+                Norway
                 ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">33,866 estimated</span> vs. 1,642 reported cases as of Mar 23.</h4>
-            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in California, US.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on June 01 (±5 days).</span>
+            <h4><span style="background-color: #fda1b4;">5,133 estimated</span> vs. 2,863 reported cases as of Mar 24.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Norway.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on June 27 (±12 days).</span>
             
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: High</span>
-        <canvas id="100_data" width="100%" height="50%"></canvas>
+        <canvas id="175_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
-            Link to Share: <a href="https://coronaviruspredictor.com/US-California.html">https://coronaviruspredictor.com/US-California.html</a>
+            Link to Share: <a href="https://coronaviruspredictor.com/Norway.html">https://coronaviruspredictor.com/Norway.html</a>
         </div>
 
         <script>
-        var ctx = document.getElementById('100_data').getContext('2d');
+        var ctx = document.getElementById('175_data').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23'],
+                labels: ['Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [3025, 3643, 4387, 5283, 6361, 7660, 9224, 11108, 13376, 16107, 19395, 23355, 28124, 33866],
+                    data: [106, 123, 142, 164, 189, 219, 252, 291, 336, 388, 448, 517, 597, 689, 796, 918, 1060, 1223, 1412, 1630, 1881, 2171, 2506, 2893, 3339, 3854, 4448, 5133],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [144, 177, 221, 282, 340, 426, 557, 698, 751, 952, 1177, 1364, 1642, 1642.0],
+                    data: [1, 1, 6, 15, 19, 25, 32, 56, 87, 108, 147, 176, 205, 400, 598, 702, 996, 1090, 1221, 1333, 1463, 1550, 1746, 1914, 2118, 2385, 2621, 2863],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]

@@ -82,7 +82,7 @@
                 Here I have only looked at mortality data and estimated how many cases of Coronavirus are actually out there.
             </p>
             <p>
-                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 24.
+                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 25.
             </p>
         </span>
     </div>
@@ -103,34 +103,34 @@
                 Philippines
                 ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">14,271 estimated</span> vs. 380 reported cases as of Mar 23.</h4>
+            <h4><span style="background-color: #fda1b4;">23,982 estimated</span> vs. 552 reported cases as of Mar 24.</h4>
             <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Philippines.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on June 21 (±5 days).</span>
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on June 09 (±3 days).</span>
             
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: High</span>
-        <canvas id="14_data" width="100%" height="50%"></canvas>
+        <canvas id="182_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
             Link to Share: <a href="https://coronaviruspredictor.com/Philippines.html">https://coronaviruspredictor.com/Philippines.html</a>
         </div>
 
         <script>
-        var ctx = document.getElementById('14_data').getContext('2d');
+        var ctx = document.getElementById('182_data').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Jan 30', 'Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23'],
+                labels: ['Jan 30', 'Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [4, 5, 6, 7, 9, 10, 12, 14, 16, 19, 22, 25, 30, 34, 40, 47, 54, 63, 74, 86, 100, 116, 135, 156, 182, 212, 246, 286, 332, 386, 449, 522, 607, 705, 820, 953, 1108, 1287, 1496, 1739, 2021, 2349, 2731, 3174, 3688, 4287, 4982, 5791, 6730, 7822, 9091, 10566, 12280, 14271],
+                    data: [3, 4, 4, 5, 6, 7, 9, 10, 12, 15, 17, 20, 24, 28, 34, 40, 47, 55, 65, 77, 91, 107, 126, 149, 175, 206, 243, 287, 338, 398, 469, 553, 651, 767, 904, 1065, 1254, 1478, 1741, 2052, 2417, 2848, 3355, 3952, 4656, 5486, 6463, 7614, 8970, 10568, 12450, 14667, 17279, 20357, 23982],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 6, 10, 20, 33, 49, 52, 64, 111, 140, 142, 187, 202, 217, 230, 307, 380, 380.0],
+                    data: [1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 5, 6, 10, 20, 33, 49, 52, 64, 111, 140, 142, 187, 202, 217, 230, 307, 380, 462, 552],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]

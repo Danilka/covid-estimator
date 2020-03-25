@@ -82,7 +82,7 @@
                 Here I have only looked at mortality data and estimated how many cases of Coronavirus are actually out there.
             </p>
             <p>
-                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 24.
+                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 25.
             </p>
         </span>
     </div>
@@ -103,34 +103,34 @@
                 Iran
                 🆗
             </h1>
-            <h4><span style="background-color: #fda1b4;">233,846 estimated</span> vs. 21,638 reported cases as of Mar 23.</h4>
+            <h4><span style="background-color: #fda1b4;">236,440 estimated</span> vs. 24,811 reported cases as of Mar 24.</h4>
             <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Iran.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 01 (±8 days).</span>
-            <span style="white-space: nowrap;">There is estimated to be ±9278 cases at the peak.</span>
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 02 (±7 days).</span>
+            <span style="white-space: nowrap;">There is estimated to be ±7316 cases at the peak.</span>
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: Medium</span>
-        <canvas id="155_data" width="100%" height="50%"></canvas>
+        <canvas id="133_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
             Link to Share: <a href="https://coronaviruspredictor.com/Iran.html">https://coronaviruspredictor.com/Iran.html</a>
         </div>
 
         <script>
-        var ctx = document.getElementById('155_data').getContext('2d');
+        var ctx = document.getElementById('133_data').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23'],
+                labels: ['Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [8702, 10031, 11556, 13301, 15296, 17571, 20160, 23098, 26424, 30175, 34390, 39107, 44360, 50180, 56591, 63607, 71232, 79456, 88253, 97582, 107382, 117578, 128078, 138778, 149567, 160329, 170950, 181321, 191343, 200933, 210021, 218556, 226504, 233846],
+                    data: [8924, 10252, 11769, 13501, 15473, 17715, 20258, 23135, 26382, 30035, 34128, 38698, 43776, 49392, 55569, 62321, 69654, 77561, 86022, 95001, 104447, 114292, 124457, 134848, 145364, 155896, 166339, 176587, 186545, 196127, 205262, 213894, 221982, 229501, 236440],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [2, 5, 18, 28, 43, 61, 95, 139, 245, 388, 593, 978, 1501, 2336, 2922, 3513, 4747, 5823, 6566, 7161, 8042, 9000, 10075, 11364, 12729, 13938, 14991, 16169, 17361, 18407, 19644, 20610, 21638, 21638.0],
+                    data: [2, 5, 18, 28, 43, 61, 95, 139, 245, 388, 593, 978, 1501, 2336, 2922, 3513, 4747, 5823, 6566, 7161, 8042, 9000, 10075, 11364, 12729, 13938, 14991, 16169, 17361, 18407, 19644, 20610, 21638, 23049, 24811],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]

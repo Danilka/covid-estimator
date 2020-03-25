@@ -82,7 +82,7 @@
                 Here I have only looked at mortality data and estimated how many cases of Coronavirus are actually out there.
             </p>
             <p>
-                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 24.
+                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 25.
             </p>
         </span>
     </div>
@@ -103,34 +103,34 @@
                 Italy
                 ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">291,682 estimated</span> vs. 59,138 reported cases as of Mar 23.</h4>
+            <h4><span style="background-color: #fda1b4;">349,786 estimated</span> vs. 69,176 reported cases as of Mar 24.</h4>
             <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Italy.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on March 21.</span>
-            <span style="white-space: nowrap;">There is estimated to be ±889 cases at the peak.</span>
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on March 22.</span>
+            <span style="white-space: nowrap;">There is estimated to be ±578 cases at the peak.</span>
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: High</span>
-        <canvas id="16_data" width="100%" height="50%"></canvas>
+        <canvas id="137_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
             Link to Share: <a href="https://coronaviruspredictor.com/Italy.html">https://coronaviruspredictor.com/Italy.html</a>
         </div>
 
         <script>
-        var ctx = document.getElementById('16_data').getContext('2d');
+        var ctx = document.getElementById('137_data').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23'],
+                labels: ['Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [175, 222, 281, 355, 449, 567, 717, 907, 1146, 1448, 1828, 2308, 2913, 3675, 4632, 5833, 7338, 9219, 11563, 14472, 18066, 22480, 27865, 34376, 42168, 51377, 62101, 74377, 88158, 103292, 119517, 136467, 153705, 170763, 187189, 202600, 216709, 229338, 240417, 249966, 258072, 264864, 270493, 275117, 278886, 281941, 284405, 286383, 287968, 289233, 290241, 291044, 291682],
+                    data: [195, 245, 307, 386, 485, 610, 766, 962, 1209, 1518, 1905, 2391, 2999, 3761, 4713, 5902, 7385, 9231, 11522, 14359, 17857, 22152, 27396, 33754, 41401, 50506, 61220, 73655, 87855, 103777, 121266, 140048, 159737, 179859, 199897, 219345, 237751, 254765, 270149, 283786, 295664, 305851, 314473, 321690, 327674, 332598, 336623, 339897, 342548, 344687, 346409, 347791, 348899, 349786],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 20, 62, 155, 229, 322, 453, 655, 888, 1128, 1694, 2036, 2502, 3089, 3858, 4636, 5883, 7375, 9172, 10149, 12462, 12462, 17660, 21157, 24747, 27980, 31506, 35713, 41035, 47021, 53578, 59138, 59138.0],
+                    data: [2, 2, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 20, 62, 155, 229, 322, 453, 655, 888, 1128, 1694, 2036, 2502, 3089, 3858, 4636, 5883, 7375, 9172, 10149, 12462, 12462, 17660, 21157, 24747, 27980, 31506, 35713, 41035, 47021, 53578, 59138, 63927, 69176],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]
