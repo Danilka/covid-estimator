@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <meta property="og:title" content="Real Coronavirus Cases Predictor">
+    <meta property="og:description" content="There are more coronavirus cases than reported. Here is why.">
+    <meta name="description" content="There are more coronavirus cases than reported. Here is why." />
+    <meta property="og:image" content="https://coronaviruspredictor.com/Germany.png">
+    <meta property="og:url" content="https://coronaviruspredictor.com/Germany.html">
+    <meta property="og:site_name" content="Real Coronavirus Cases Predictor">
+    <meta property="og:type" content="article" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="There are more coronavirus cases than reported. Here is why.">
+    <meta name="twitter:site" content="@Danilka">
+    
+    <script>
+        if (location.protocol !== 'https:') {
+            location.replace(`https:${location.href.substring(location.protocol.length)}`);
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155322357-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-155322357-2');
+    </script>
+    
+    <title>Real estimated cases of COVID-19</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #36A2EB;">
+      <a class="navbar-brand" href="https://coronaviruspredictor.com/index.html">Coronavirus Predictor</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://coronaviruspredictor.com/index.html">United States</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://coronaviruspredictor.com/world.html">World</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://medium.com/@danilka/there-are-more-coronavirus-cases-than-you-think-6fa2fed50355">How is this calculated?</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" style="text-decoration: underline;" href="https://kozyatnikov.com">Made by Danil Kozyatnikov</a>
+            </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    
+
+    <div class="container" style="margin-top: 50px;">
+        <h1>Estimations of Actual Covid-19 Cases</h1>
+        <span>
+            <p>
+                Not everyone gets diagnosed with COVID-19. There are not enough tests for everyone, some people think they just have flu, and some don't even have any symptoms.
+                However, all of these people still spread the virus.
+                Here I have only looked at mortality data and estimated how many cases of Coronavirus are actually out there.
+            </p>
+            <p>
+                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 29.
+            </p>
+        </span>
+    </div>
+
+    <div class="container" style="margin-top: 50px;">
+        <h4 style="margin-top: 20px;">
+            See data for:
+            <div class="btn-group" role="group" aria-label="Regions">
+                <a class="btn btn-secondary" style="background-color: #36A2EB;" href="https://coronaviruspredictor.com/index.html">United States</a>
+                <a class="btn btn-secondary" style="background-color: #36A2EB;" href="https://coronaviruspredictor.com/world.html">Worldwide</a>
+            </div>
+        </h4>
+    </div>
+
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                Germany
+                👎
+            </h1>
+            <h4><span style="background-color: #fda1b4;">252,546 estimated</span> vs. 57,695 reported cases as of Mar 28.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Germany.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 08 (±7 days).</span>
+            <span style="white-space: nowrap;">There is estimated to be ±17254 cases at the peak.</span>
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: Low</span>
+        <canvas id="120_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/Germany.html">https://coronaviruspredictor.com/Germany.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('120_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Jan 27', 'Jan 28', 'Jan 29', 'Jan 30', 'Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [0, 0, 0, 0, 0, 0, 1, 1, 2, 2, 3, 4, 5, 7, 9, 12, 16, 21, 27, 35, 46, 59, 77, 100, 129, 167, 217, 280, 363, 469, 607, 785, 1015, 1312, 1696, 2191, 2828, 3649, 4703, 6057, 7789, 9999, 12809, 16363, 20829, 26398, 33276, 41666, 51752, 63664, 77442, 92998, 110091, 128322, 147157, 165988, 184209, 201288, 216827, 230585, 242478, 252546],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [1, 4, 4, 4, 5, 8, 10, 12, 12, 12, 12, 13, 13, 14, 14, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 17, 27, 46, 48, 79, 130, 159, 196, 262, 482, 670, 799, 1040, 1176, 1457, 1908, 2078, 3675, 4585, 5795, 7272, 9257, 12327, 15320, 19848, 22213, 24873, 29056, 32986, 37323, 43938, 50871, 57695],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+    
+
+    <div class="container" style="margin-top: 50px;">
+        Data used for these calculations was provided and is copyrighted by <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins University</a> and <a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html" target="_blank">The New York Times</a>.<br/>
+        All information on this site is provided for educational purposes only and is not intended to be used in any way other then to satisfy general curiosity.
+    </div>
+
+    <footer class="page-footer" style="background-color: #36A2EB; margin-top: 50px;">
+        <div class="footer-copyright text-center py-3" style="color: white;">Not all regions have enough data for a high quality estimation. Please check back for updates.</div>
+    </footer>
+
+  </body>
+</html>
