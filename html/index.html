@@ -82,7 +82,7 @@
                 Here I have only looked at mortality data and estimated how many cases of Coronavirus are actually out there.
             </p>
             <p>
-                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 29.
+                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on April 01.
             </p>
         </span>
     </div>
@@ -100,37 +100,87 @@
     
         <div class="container" style="margin-top: 50px;">
             <h1>
-                Indiana, US
+                Pennsylvania, US
                 ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">211,696 estimated</span> vs. 982 reported cases as of Mar 27.</h4>
-            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Indiana, US.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 11 (±1 days).</span>
+            <h4><span style="background-color: #fda1b4;">590,338 estimated</span> vs. 4,997 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Pennsylvania, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 13 (±2 days).</span>
             
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: High</span>
-        <canvas id="22_data" width="100%" height="50%"></canvas>
+        <canvas id="26_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
-            Link to Share: <a href="https://coronaviruspredictor.com/US-Indiana.html">https://coronaviruspredictor.com/US-Indiana.html</a>
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Pennsylvania.html">https://coronaviruspredictor.com/US-Pennsylvania.html</a>
         </div>
 
         <script>
-        var ctx = document.getElementById('22_data').getContext('2d');
+        var ctx = document.getElementById('26_data').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27'],
+                labels: ['Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [415, 558, 751, 1011, 1361, 1831, 2465, 3317, 4463, 6006, 8083, 10876, 14636, 19695, 26503, 35663, 47990, 64576, 86895, 116925, 157331, 211696],
+                    data: [351, 472, 636, 856, 1152, 1551, 2087, 2810, 3782, 5091, 6852, 9223, 12414, 16709, 22490, 30270, 40743, 54839, 73810, 99344, 133710, 179960, 242204, 325966, 438680, 590338],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [1, 1, 2, 4, 6, 11, 12, 12, 15, 19, 24, 30, 39, 56, 79, 126, 201, 259, 366, 479, 656, 982],
+                    data: [2, 4, 6, 10, 12, 16, 22, 41, 47, 68, 81, 101, 139, 187, 269, 388, 504, 644, 851, 1151, 1690, 2218, 2815, 3441, 4156, 4997],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                Ohio, US
+                ✅
+            </h1>
+            <h4><span style="background-color: #fda1b4;">258,478 estimated</span> vs. 2,199 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Ohio, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 18 (±2 days).</span>
+            
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: High</span>
+        <canvas id="36_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Ohio.html">https://coronaviruspredictor.com/US-Ohio.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('36_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [713, 933, 1219, 1594, 2083, 2723, 3560, 4653, 6083, 7951, 10393, 13585, 17757, 23211, 30340, 39657, 51837, 67756, 88563, 115759, 151304, 197761, 258478],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [3, 3, 4, 5, 13, 26, 37, 50, 67, 90, 120, 169, 247, 351, 444, 564, 706, 867, 1144, 1406, 1665, 1933, 2199],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]
@@ -153,9 +203,9 @@
                 Colorado, US
                 ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">151,285 estimated</span> vs. 1,735 reported cases as of Mar 27.</h4>
+            <h4><span style="background-color: #fda1b4;">132,928 estimated</span> vs. 2,990 reported cases as of Mar 31.</h4>
             <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Colorado, US.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 15 (±2 days).</span>
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 28 (±2 days).</span>
             
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: High</span>
@@ -171,16 +221,116 @@
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27'],
+                labels: ['Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [403, 527, 691, 904, 1184, 1551, 2030, 2658, 3481, 4557, 5966, 7811, 10227, 13389, 17530, 22950, 30047, 39338, 51501, 67425, 88271, 115561, 151285],
+                    data: [440, 548, 683, 851, 1060, 1321, 1645, 2049, 2553, 3180, 3961, 4934, 6145, 7654, 9534, 11875, 14791, 18424, 22948, 28583, 35602, 44344, 55232, 68794, 85686, 106725, 132928],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [2, 8, 8, 8, 12, 17, 34, 49, 78, 103, 136, 161, 183, 216, 278, 364, 475, 591, 721, 912, 1086, 1432, 1735],
+                    data: [2, 8, 8, 8, 12, 17, 34, 49, 78, 103, 136, 161, 183, 216, 278, 364, 475, 591, 721, 912, 1086, 1432, 1735, 2061, 2315, 2628, 2990],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                Oklahoma, US
+                ✅
+            </h1>
+            <h4><span style="background-color: #fda1b4;">77,677 estimated</span> vs. 566 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Oklahoma, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 25 (±4 days).</span>
+            
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: High</span>
+        <canvas id="25_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Oklahoma.html">https://coronaviruspredictor.com/US-Oklahoma.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('25_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [157, 201, 258, 331, 424, 543, 696, 892, 1144, 1466, 1879, 2409, 3087, 3956, 5070, 6498, 8328, 10674, 13680, 17532, 22468, 28795, 36903, 47295, 60611, 77677],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [1, 1, 1, 1, 2, 2, 2, 3, 4, 8, 10, 18, 29, 44, 49, 53, 67, 81, 106, 164, 248, 322, 377, 429, 481, 566],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                Indiana, US
+                ✅
+            </h1>
+            <h4><span style="background-color: #fda1b4;">79,038 estimated</span> vs. 2,159 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Indiana, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 31 (±4 days).</span>
+            
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: High</span>
+        <canvas id="22_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Indiana.html">https://coronaviruspredictor.com/US-Indiana.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('22_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [410, 506, 625, 772, 952, 1175, 1451, 1791, 2210, 2728, 3367, 4155, 5128, 6329, 7811, 9641, 11898, 14685, 18123, 22367, 27605, 34069, 42047, 51892, 64043, 79038],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [1, 1, 2, 4, 6, 11, 12, 12, 15, 19, 24, 30, 39, 56, 79, 126, 201, 259, 366, 479, 656, 982, 1232, 1514, 1788, 2159],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]
@@ -203,9 +353,9 @@
                 Connecticut, US
                 ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">112,869 estimated</span> vs. 1,291 reported cases as of Mar 27.</h4>
+            <h4><span style="background-color: #fda1b4;">140,927 estimated</span> vs. 3,128 reported cases as of Mar 31.</h4>
             <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Connecticut, US.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 17 (±3 days).</span>
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 26 (±6 days).</span>
             
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: High</span>
@@ -221,16 +371,16 @@
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27'],
+                labels: ['Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [814, 1056, 1369, 1775, 2301, 2983, 3867, 5013, 6498, 8424, 10920, 14156, 18350, 23788, 30837, 39974, 51818, 67171, 87073, 112869],
+                    data: [709, 893, 1124, 1414, 1780, 2241, 2821, 3551, 4469, 5626, 7081, 8913, 11219, 14121, 17774, 22372, 28159, 35443, 44612, 56152, 70677, 88958, 111968, 140927],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [1, 2, 2, 3, 6, 11, 20, 26, 41, 68, 96, 159, 194, 223, 327, 415, 618, 875, 1012, 1291],
+                    data: [1, 2, 2, 3, 6, 11, 20, 26, 41, 68, 96, 159, 194, 223, 327, 415, 618, 875, 1012, 1291, 1524, 1993, 2571, 3128],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]
@@ -250,37 +400,187 @@
     
         <div class="container" style="margin-top: 50px;">
             <h1>
-                Texas, US
+                Mississippi, US
                 ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">99,736 estimated</span> vs. 1,942 reported cases as of Mar 27.</h4>
-            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Texas, US.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 18 (±4 days).</span>
+            <h4><span style="background-color: #fda1b4;">79,133 estimated</span> vs. 937 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Mississippi, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 24 (±5 days).</span>
             
             <br/>
             <span style="white-space: nowrap;">Estimation confidence: High</span>
-        <canvas id="6_data" width="100%" height="50%"></canvas>
+        <canvas id="41_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
-            Link to Share: <a href="https://coronaviruspredictor.com/US-Texas.html">https://coronaviruspredictor.com/US-Texas.html</a>
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Mississippi.html">https://coronaviruspredictor.com/US-Mississippi.html</a>
         </div>
 
         <script>
-        var ctx = document.getElementById('6_data').getContext('2d');
+        var ctx = document.getElementById('41_data').getContext('2d');
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27'],
+                labels: ['Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [1, 1, 1, 2, 2, 3, 4, 6, 8, 10, 13, 18, 23, 30, 39, 51, 66, 86, 112, 146, 189, 246, 319, 414, 538, 699, 907, 1178, 1530, 1987, 2579, 3349, 4348, 5645, 7330, 9516, 12355, 16041, 20826, 27039, 35105, 45577, 59172, 76822, 99736],
+                    data: [483, 624, 805, 1039, 1341, 1730, 2232, 2881, 3717, 4796, 6188, 7985, 10302, 13293, 17152, 22130, 28554, 36842, 47535, 61332, 79133],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [1, 2, 2, 2, 2, 2, 2, 2, 2, 4, 4, 4, 10, 10, 10, 10, 11, 11, 11, 11, 11, 12, 16, 19, 19, 23, 24, 31, 33, 41, 58, 69, 80, 87, 106, 166, 248, 377, 547, 632, 728, 857, 1119, 1543, 1942],
+                    data: [1, 1, 6, 6, 10, 12, 21, 34, 50, 80, 140, 207, 249, 320, 377, 487, 579, 669, 759, 848, 937],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                Arizona, US
+                ✅
+            </h1>
+            <h4><span style="background-color: #fda1b4;">47,286 estimated</span> vs. 1,298 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Arizona, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on June 02 (±7 days).</span>
+            
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: High</span>
+        <canvas id="3_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Arizona.html">https://coronaviruspredictor.com/US-Arizona.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('3_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Jan 26', 'Jan 27', 'Jan 28', 'Jan 29', 'Jan 30', 'Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 3, 4, 5, 6, 7, 9, 12, 14, 18, 23, 28, 35, 44, 55, 68, 85, 106, 132, 164, 204, 253, 315, 392, 488, 606, 754, 938, 1166, 1450, 1803, 2241, 2787, 3465, 4308, 5357, 6660, 8281, 10296, 12801, 15916, 19789, 24604, 30590, 38032, 47286],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 5, 5, 6, 6, 9, 9, 9, 12, 13, 18, 20, 28, 47, 70, 104, 153, 234, 326, 402, 508, 665, 773, 929, 1169, 1298],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                South Carolina, US
+                ✅
+            </h1>
+            <h4><span style="background-color: #fda1b4;">23,019 estimated</span> vs. 1,083 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in South Carolina, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on June 11 (±4 days).</span>
+            
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: High</span>
+        <canvas id="27_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-South-Carolina.html">https://coronaviruspredictor.com/US-South-Carolina.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('27_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [220, 265, 319, 384, 463, 557, 672, 809, 974, 1174, 1414, 1703, 2051, 2470, 2975, 3583, 4316, 5198, 6261, 7541, 9082, 10939, 13175, 15868, 19112, 23019],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [2, 2, 6, 7, 9, 10, 12, 13, 19, 28, 33, 47, 60, 81, 126, 172, 194, 299, 342, 424, 456, 539, 660, 774, 925, 1083],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                Wisconsin, US
+                ✅
+            </h1>
+            <h4><span style="background-color: #fda1b4;">26,300 estimated</span> vs. 1,351 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Wisconsin, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on June 10 (±6 days).</span>
+            
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: High</span>
+        <canvas id="5_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Wisconsin.html">https://coronaviruspredictor.com/US-Wisconsin.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('5_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [0, 1, 1, 1, 1, 2, 2, 3, 3, 4, 5, 6, 8, 10, 12, 14, 17, 21, 25, 31, 37, 45, 54, 65, 79, 95, 115, 139, 168, 202, 244, 294, 355, 428, 516, 622, 751, 905, 1092, 1316, 1587, 1914, 2308, 2783, 3356, 4047, 4880, 5885, 7096, 8556, 10317, 12441, 15001, 18088, 21811, 26300],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 6, 8, 19, 27, 33, 47, 72, 106, 155, 216, 281, 382, 418, 481, 623, 754, 930, 1042, 1120, 1267, 1351],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]
@@ -301,14 +601,14 @@
         <div class="container" style="margin-top: 50px;">
             <h1>
                 New York, US
-                🆗
+                ✅
             </h1>
-            <h4><span style="background-color: #fda1b4;">282,840 estimated</span> vs. 44,635 reported cases as of Mar 27.</h4>
+            <h4><span style="background-color: #fda1b4;">288,023 estimated</span> vs. 75,832 reported cases as of Mar 31.</h4>
             <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in New York, US.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 04 (±12 days).</span>
-            <span style="white-space: nowrap;">There is estimated to be ±34447 cases at the peak.</span>
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 05 (±2 days).</span>
+            <span style="white-space: nowrap;">There is estimated to be ±6211 cases at the peak.</span>
             <br/>
-            <span style="white-space: nowrap;">Estimation confidence: Medium</span>
+            <span style="white-space: nowrap;">Estimation confidence: High</span>
         <canvas id="11_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
@@ -321,16 +621,216 @@
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27'],
+                labels: ['Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [1853, 2542, 3485, 4771, 6522, 8895, 12095, 16380, 22064, 29511, 39110, 51227, 66124, 83858, 104175, 126453, 149740, 172894, 194797, 214563, 231657, 245904, 257415, 266487, 273496, 278830, 282840],
+                    data: [2220, 2963, 3951, 5262, 6999, 9289, 12298, 16225, 21311, 27831, 36084, 46357, 58887, 73795, 91017, 110247, 130921, 152262, 173385, 193443, 211751, 227870, 241617, 253025, 262281, 269654, 275441, 279931, 283383, 286020, 288023],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [1, 1, 2, 11, 22, 44, 89, 106, 142, 173, 217, 326, 421, 610, 732, 950, 1374, 2382, 4152, 7102, 10356, 15168, 20875, 25665, 33066, 38987, 44635],
+                    data: [1, 1, 2, 11, 22, 44, 89, 106, 142, 173, 217, 326, 421, 610, 732, 950, 1374, 2382, 4152, 7102, 10356, 15168, 20875, 25665, 33066, 38987, 44635, 53363, 59568, 67174, 75832],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                Washington, US
+                🆗
+            </h1>
+            <h4><span style="background-color: #fda1b4;">46,375 estimated</span> vs. 5,292 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Washington, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on May 04 (±62 days).</span>
+            <span style="white-space: nowrap;">There is estimated to be ±61293 cases at the peak.</span>
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: Medium</span>
+        <canvas id="0_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Washington.html">https://coronaviruspredictor.com/US-Washington.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('0_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Jan 21', 'Jan 22', 'Jan 23', 'Jan 24', 'Jan 25', 'Jan 26', 'Jan 27', 'Jan 28', 'Jan 29', 'Jan 30', 'Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [34, 38, 42, 47, 52, 58, 65, 72, 80, 89, 99, 110, 122, 136, 151, 168, 186, 207, 230, 256, 284, 316, 351, 390, 433, 481, 535, 594, 660, 733, 814, 904, 1004, 1115, 1239, 1376, 1527, 1696, 1883, 2091, 2321, 2577, 2860, 3174, 3522, 3908, 4336, 4809, 5333, 5914, 6556, 7265, 8050, 8917, 9873, 10929, 12092, 13373, 14783, 16333, 18036, 19902, 21947, 24183, 26625, 29286, 32181, 35325, 38730, 42409, 46375],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 5, 5, 5, 5, 7, 10, 17, 23, 32, 47, 75, 86, 110, 141, 179, 279, 338, 419, 511, 609, 675, 794, 908, 1026, 1228, 1404, 1655, 1844, 2101, 2469, 2585, 3208, 3770, 4311, 4896, 5179, 5292],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                New Jersey, US
+                🆗
+            </h1>
+            <h4><span style="background-color: #fda1b4;">228,742 estimated</span> vs. 18,696 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in New Jersey, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 14 (±26 days).</span>
+            <span style="white-space: nowrap;">There is estimated to be ±61785 cases at the peak.</span>
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: Medium</span>
+        <canvas id="16_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-New-Jersey.html">https://coronaviruspredictor.com/US-New-Jersey.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('16_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [1046, 1348, 1738, 2239, 2884, 3711, 4772, 6130, 7864, 10071, 12870, 16402, 20831, 26342, 33134, 41408, 51340, 63061, 76612, 91918, 108752, 126737, 145364, 164045, 182187, 199261, 214864, 228742],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [1, 2, 4, 4, 6, 11, 15, 23, 29, 50, 75, 98, 176, 268, 427, 735, 896, 1336, 1914, 2844, 3675, 4402, 6876, 8825, 11124, 13386, 16636, 18696],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                California, US
+                🆗
+            </h1>
+            <h4><span style="background-color: #fda1b4;">107,340 estimated</span> vs. 8,582 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in California, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 22 (±50 days).</span>
+            <span style="white-space: nowrap;">There is estimated to be ±86654 cases at the peak.</span>
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: Medium</span>
+        <canvas id="2_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-California.html">https://coronaviruspredictor.com/US-California.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('2_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Jan 25', 'Jan 26', 'Jan 27', 'Jan 28', 'Jan 29', 'Jan 30', 'Jan 31', 'Feb 01', 'Feb 02', 'Feb 03', 'Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [1, 1, 1, 2, 2, 2, 3, 4, 5, 6, 7, 8, 10, 12, 14, 17, 21, 25, 30, 36, 43, 52, 62, 74, 89, 106, 127, 152, 183, 219, 262, 313, 375, 449, 537, 642, 768, 919, 1100, 1315, 1573, 1881, 2248, 2686, 3210, 3833, 4576, 5460, 6511, 7759, 9238, 10989, 13055, 15490, 18349, 21694, 25592, 30114, 35329, 41306, 48106, 55779, 64356, 73843, 84215, 95414, 107340],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [1, 2, 2, 2, 2, 2, 3, 3, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 9, 9, 9, 11, 11, 26, 26, 27, 28, 33, 38, 45, 55, 67, 81, 100, 112, 172, 179, 202, 252, 320, 381, 478, 588, 732, 893, 1067, 1283, 1544, 1851, 2240, 2644, 3183, 4060, 4914, 5565, 6266, 7421, 8582],
+                    backgroundColor: 'rgba(54, 162, 235, 1)',
+                  }
+                ]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+        </script>
+        </div>
+    
+        <div class="container" style="margin-top: 50px;">
+            <h1>
+                Michigan, US
+                🆗
+            </h1>
+            <h4><span style="background-color: #fda1b4;">267,561 estimated</span> vs. 7,630 reported cases as of Mar 31.</h4>
+            <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Michigan, US.</span>-->
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 11 (±31 days).</span>
+            <span style="white-space: nowrap;">There is estimated to be ±89939 cases at the peak.</span>
+            <br/>
+            <span style="white-space: nowrap;">Estimation confidence: Medium</span>
+        <canvas id="37_data" width="100%" height="50%"></canvas>
+
+        <div style="margin-top: 20px;">
+            Link to Share: <a href="https://coronaviruspredictor.com/US-Michigan.html">https://coronaviruspredictor.com/US-Michigan.html</a>
+        </div>
+
+        <script>
+        var ctx = document.getElementById('37_data').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                labels: ['Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31'],
+                datasets: [
+                  {
+                    label: 'Estimated Cases',
+                    data: [4228, 5742, 7784, 10525, 14184, 19029, 25379, 33590, 44022, 56985, 72657, 90985, 111606, 133821, 156663, 179049, 199979, 218706, 234813, 248201, 259019, 267561],
+                    backgroundColor: 'rgba(255, 99, 132, 1)',
+                  },
+                  {
+                    label: 'Reported Cases',
+                    data: [2, 2, 12, 25, 33, 53, 54, 65, 80, 334, 548, 787, 1033, 1324, 1791, 2294, 2878, 3657, 4635, 5486, 6508, 7630],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]

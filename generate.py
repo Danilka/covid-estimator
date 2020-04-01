@@ -21,7 +21,8 @@ __email__ = 'covidestimator@danilink.com'
 DEBUG = False
 SITE_URL = 'https://coronaviruspredictor.com/'
 # SITE_URL = 'http://private/var/www/covid-estimator/html/'
-SITE_BASE_PATH = '/var/www/covid-estimator/html/'
+CODE_BASE_PATH = os.path.dirname(os.path.realpath(__file__))
+SITE_BASE_PATH =  os.path.join(CODE_BASE_PATH, 'html/')
 JH_DATA_BASE_PATH = '/var/www/COVID-19/'
 NYT_DATA_BASE_PATH = '/var/www/covid-19-data/'
 
@@ -162,7 +163,10 @@ class CovidDataAnalyzer:
         self.avg_days_to_death = avg_days_to_symptoms + avg_days_symptoms_to_death
 
         # Load states population data.
-        self.states_population = pd.read_csv('statepop.tsv', delimiter='\t')
+        self.states_population = pd.read_csv(
+            os.path.join(CODE_BASE_PATH, 'statepop.tsv'),
+            delimiter='\t',
+        )
 
 
     @staticmethod
@@ -442,7 +446,7 @@ def render_page(data, filename, social_image_filename='social.jpg'):
     :param filename: Filename to be generated, with extension and no path. e.g. index.html
     :return:
     """
-    file_loader = FileSystemLoader('templates')
+    file_loader = FileSystemLoader(os.path.join(CODE_BASE_PATH, 'templates'))
     env = Environment(loader=file_loader)
     template = env.get_template('index.html')
 
@@ -517,4 +521,5 @@ def render_pages():
 
 
 # Run page generator.
-render_pages()
+if __name__ == "__main__":
+    render_pages()
