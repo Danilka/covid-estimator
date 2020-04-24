@@ -82,7 +82,7 @@
                 Here I have only looked at mortality data and estimated how many cases of Coronavirus are actually out there.
             </p>
             <p>
-                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on March 29.
+                Only regions with sufficient data are displayed. Estimates are updated daily as the new data becomes available. Last updated on April 18.
             </p>
         </span>
     </div>
@@ -101,14 +101,14 @@
         <div class="container" style="margin-top: 50px;">
             <h1>
                 Belgium
-                👎
+                🆗
             </h1>
-            <h4><span style="background-color: #fda1b4;">257,343 estimated</span> vs. 9,134 reported cases as of Mar 28.</h4>
+            <h4><span style="background-color: #fda1b4;">282,260 estimated</span> vs. 36,138 reported cases as of Apr 17.</h4>
             <!--<span style="white-space: nowrap;">Approximate number of actual COVID-19 cases vs. reported cases in Belgium.</span>-->
-            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 08 (±19 days).</span>
-            <span style="white-space: nowrap;">There is estimated to be ±49183 cases at the peak.</span>
+            <span style="white-space: nowrap;">The pandemic is predicted to peak in this region on April 16 (±1 days).</span>
+            <span style="white-space: nowrap;">There is estimated to be ±1112 cases at the peak.</span>
             <br/>
-            <span style="white-space: nowrap;">Estimation confidence: Low</span>
+            <span style="white-space: nowrap;">Estimation confidence: Medium</span>
         <canvas id="23_data" width="100%" height="50%"></canvas>
 
         <div style="margin-top: 20px;">
@@ -121,16 +121,16 @@
             type: 'bar',
             data: {
                 // labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                labels: ['Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28'],
+                labels: ['Feb 04', 'Feb 05', 'Feb 06', 'Feb 07', 'Feb 08', 'Feb 09', 'Feb 10', 'Feb 11', 'Feb 12', 'Feb 13', 'Feb 14', 'Feb 15', 'Feb 16', 'Feb 17', 'Feb 18', 'Feb 19', 'Feb 20', 'Feb 21', 'Feb 22', 'Feb 23', 'Feb 24', 'Feb 25', 'Feb 26', 'Feb 27', 'Feb 28', 'Feb 29', 'Mar 01', 'Mar 02', 'Mar 03', 'Mar 04', 'Mar 05', 'Mar 06', 'Mar 07', 'Mar 08', 'Mar 09', 'Mar 10', 'Mar 11', 'Mar 12', 'Mar 13', 'Mar 14', 'Mar 15', 'Mar 16', 'Mar 17', 'Mar 18', 'Mar 19', 'Mar 20', 'Mar 21', 'Mar 22', 'Mar 23', 'Mar 24', 'Mar 25', 'Mar 26', 'Mar 27', 'Mar 28', 'Mar 29', 'Mar 30', 'Mar 31', 'Apr 01', 'Apr 02', 'Apr 03', 'Apr 04', 'Apr 05', 'Apr 06', 'Apr 07', 'Apr 08', 'Apr 09', 'Apr 10', 'Apr 11', 'Apr 12', 'Apr 13', 'Apr 14', 'Apr 15', 'Apr 16', 'Apr 17'],
                 datasets: [
                   {
                     label: 'Estimated Cases',
-                    data: [0, 1, 1, 2, 2, 3, 5, 6, 8, 11, 15, 20, 26, 34, 45, 60, 79, 104, 137, 181, 238, 313, 413, 543, 714, 939, 1235, 1623, 2132, 2800, 3674, 4816, 6305, 8242, 10751, 13987, 18134, 23409, 30050, 38310, 48422, 60573, 74843, 91163, 109268, 128688, 148783, 168813, 188050, 205878, 221861, 235769, 247562, 257343],
+                    data: [64, 76, 89, 104, 122, 143, 168, 197, 231, 270, 317, 371, 435, 510, 598, 701, 821, 962, 1127, 1320, 1546, 1810, 2119, 2481, 2903, 3397, 3974, 4646, 5431, 6345, 7409, 8647, 10083, 11748, 13676, 15901, 18465, 21410, 24783, 28631, 33004, 37949, 43512, 49731, 56639, 64254, 72579, 81601, 91282, 101562, 112359, 123567, 135063, 146708, 158357, 169865, 181095, 191919, 202234, 211952, 221015, 229383, 237041, 243990, 250250, 255851, 260832, 265238, 269117, 272517, 275486, 278072, 280316, 282260],
                     backgroundColor: 'rgba(255, 99, 132, 1)',
                   },
                   {
                     label: 'Reported Cases',
-                    data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 8, 13, 23, 50, 109, 169, 200, 239, 267, 314, 314, 559, 689, 886, 1058, 1243, 1486, 1795, 2257, 2815, 3401, 3743, 4269, 4937, 6235, 7284, 9134],
+                    data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 8, 13, 23, 50, 109, 169, 200, 239, 267, 314, 314, 559, 689, 886, 1058, 1243, 1486, 1795, 2257, 2815, 3401, 3743, 4269, 4937, 6235, 7284, 9134, 10836, 11899, 12775, 13964, 15348, 16770, 18431, 19691, 20814, 22194, 23403, 24983, 26667, 28018, 29647, 30589, 31119, 33573, 34809, 36138],
                     backgroundColor: 'rgba(54, 162, 235, 1)',
                   }
                 ]
